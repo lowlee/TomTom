@@ -576,6 +576,9 @@ local function wayframe_OnEvent(self, event, arg1, ...)
 				local column = cell % 9
 				local row = floor(cell / 9)
 
+				feed_crazy.value = sformat("%d", TomTom:GetDistanceToWaypoint(active_point))
+				feed_crazy.suffix = L["yards"]
+
 				local key = column .. ":" .. row
 				feed_crazy.iconCoords = texcoords[key]
 				feed_crazy.text = point_title or L["Unknown waypoint"]
