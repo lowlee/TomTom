@@ -549,6 +549,8 @@ local function wayframe_OnEvent(self, event, arg1, ...)
 					feed_crazy.iconG = 1.0
 					feed_crazy.iconB = 0.2
 					feed_crazy.text = "No waypoint"
+					feed_crazy.value = nil
+					feed_crazy.suffix = nil
 					return
 				end
 
